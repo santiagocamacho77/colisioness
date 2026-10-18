@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e55688582ee94145ab7ce06fb22d2c5, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::GameConfig
+  wallX: 3.5
+  wallThickness: 1
+  wallHeight: 200
+  wallBottomY: -10
+  depth: 2
+  floorY: -0.727
+  floorHeight: 1
+  cameraFov: 45
+  fitWallsToScreenWidth: 1
+  cameraDistance: 23
+  cameraSideMargin: 0.3
+  cameraOffsetY: 4
+  cameraSmoothTime: 0.25
+  playerFriction: 0
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  wallLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckDistance: 0.1
+  wallCheckDistance: 0.08
+  maxMoveSpeed: 8.007252
+  groundAcceleration: 70
+  groundDeceleration: 80
+  airAcceleration: 45
+  airDeceleration: 20
+  gravity: 35
+  fallGravityMultiplier: 1.7
+  maxFallSpeed: 25
+  jumpHeight: 3.5
+  jumpCutMultiplier: 0.7
+  coyoteTime: 0.12
+  jumpBufferTime: 0.13
+  jumpCutGravityMult: 2.2
+  apexThreshold: 2.5
+  apexGravityMult: 0.55
+  wallStickTime: 0.4
+  wallStickFallSpeed: 0.2
+  wallSlideInitialSpeed: 1.5
+  wallSlideAcceleration: 20
+  wallSlideMaxSpeed: 14
+  wallSlideMaxTime: 0.8
+  wallAttachMaxRiseSpeed: 4
+  wallStickPushSpeed: 1
+  wallJumpHeight: 4
+  wallJumpHorizontalSpeed: 8
+  wallJumpVariableHeight: 0
+  wallJumpInputLockTime: 0.15
+  wallJumpControlRampTime: 0.18
+  wallStickBrake: 70
+  wallSlideBlend: 40
+  dashSpeed: 45.024475
+  dashDuration: 0.15
+  dashEndSpeedMultiplier: 0.3
+  dashBufferTime: 0.1
+  dashRechargeDelay: 0.1
+  dashEaseFraction: 0.4
+  ledgeSnapHeight: 0.35
+  touchTapMaxTime: 0.2
+  touchMoveDelay: 0.1
+  swipeMinDistance: 0.1
+  swipeMaxTime: 0.25
+  touchJumpHoldTime: 0.25
+  simulateTouchWithMouse: 0
+  squashSpringStiffness: 220
+  squashSpringDamping: 14
+  jumpStretchY: 1.35
+  landSquashYMin: 0.8
+  landSquashYMax: 0.5
+  landFallDistanceMin: 0.5
+  landFallDistanceMax: 10
+  landIgnoreFallDistance: 0.15
+  wallSquashAmount: 0.15
+  wallImpactSquashX: 0.7
+  dashStretch: 1.4
+  dashSquash: 0.75
+  tiltMaxAngle: 12
+  tiltSmoothing: 18
+  dustColor: {r: 0.85, g: 0.85, b: 0.8, a: 0.9}
+  jumpDustCount: 6
+  landDustMinCount: 4
+  landDustMaxCount: 24
+  dustSpeed: 2.5
+  dustSize: 0.18
+  dustLifetime: 0.5
+  wallDustMaxRate: 70
+  wallDustMinRate: 8
+  wallDustSize: 0.1
+  dashFreezeTime: 0.035
+  dashShakeAmplitude: 0.1
+  dashShakeDuration: 0.2
+  dashShakeFrequency: 35
+  dashTrailTime: 0.25
+  dashTrailWidth: 0.9
+  dashTrailColor: {r: 0.5, g: 0.9, b: 1, a: 0.8}
+  airStretchAmount: 0.12
+  runBobAmount: 0.05
+  runBobFrequency: 16
+  wallLeanAngle: 9
+  wallReleaseWarnFraction: 0.3
+  wallReleaseJitter: 0.05
+  ghostInterval: 0.03
+  ghostLifetime: 0.24
+  ghostColor: {r: 0.55, g: 0.95, b: 1, a: 0.55}
+  dashUsedTint: 0.55
+  dashRechargeFlashTime: 0.18
+  chunkHeight: 12
+  generateAheadDistance: 30
+  recycleBehindDistance: 12
+  wallSegmentHeight: 20
+  useFixedSeed: 0
+  fixedSeed: 12345
+  difficultyMaxHeight: 300
+  platformThickness: 0.5
+  platformWidthMin: 2.2
+  platformWidthMax: 3.6
+  platformWidthMinHard: 1.6
+  platformWidthMaxHard: 2.6
+  minVerticalGap: 1.9
+  verticalReachSafety: 0.8
+  minHorizontalShift: 1.2
+  horizontalReachSafety: 0.6
+  dashReachUse: 0.6
+  extraPlatformChance: 0.35
+  oneWayTolerance: 0.12
+  dashGapStartHeight: 10
+  dashGapMaxChance: 0.3
+  dashGapRampHeight: 120
+  dashGapMin: 4
+  dashGapMax: 6
+  dashGapMaxShift: 1.8
+  wallShaftStartHeight: 25
+  wallShaftIntervalMin: 30
+  wallShaftIntervalMax: 50
+  wallShaftHeightMin: 7
+  wallShaftHeightMax: 11
+  fallingStartHeight: 8
+  fallingMaxChance: 0.3
+  timedStartHeight: 25
+  timedMaxChance: 0.25
+  movingStartHeight: 40
+  movingMaxChance: 0.25
+  chanceRampHeight: 100
+  fallingShakeTime: 0.5
+  fallingShakeAmplitude: 0.07
+  fallingGravity: 30
+  fallingDespawnDistance: 14
+  timedVisibleTime: 2.5
+  timedHiddenTime: 1.8
+  timedWarnTime: 0.6
+  timedBlinkHz: 12
+  movingMinAmplitude: 1
+  movingMaxAmplitude: 2.5
+  movingMinOmega: 0.8
+  movingMaxOmega: 1.8
+  safeZoneInterval: 60
+  safeZoneThickness: 0.8
+  safeZoneWidthFraction: 0.92
+  scrollSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 100
+      value: 1.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 250
+      value: 1.9
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 500
+      value: 2.7
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1000
+      value: 3.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scrollMaxSpeed: 3.4
+  scrollStartDelay: 2.5
+  deathMargin: 0.5
+  deathSlowMoScale: 0.25
+  deathSlowMoTime: 0.8
+  retryInputDelay: 0.45
+  restartWithKey: 1
+  difficultyMoveSpeedBonus: 0.25
+  difficultyDashSpeedBonus: 0.15
+  backgroundTransitionHeight: 80
+  backgroundStages:
+  - name: Atardecer
+    startHeight: 0
+    topColor: {r: 0.33, g: 0.27, b: 0.58, a: 1}
+    bottomColor: {r: 1, g: 0.62, b: 0.38, a: 1}
+    stars: 0
+    clouds: 1
+    cloudColor: {r: 1, g: 0.86, b: 0.76, a: 1}
+    lightColor: {r: 1, g: 0.86, b: 0.7, a: 1}
+    lightIntensity: 1
+  - name: Noche
+    startHeight: 150
+    topColor: {r: 0.04, g: 0.05, b: 0.18, a: 1}
+    bottomColor: {r: 0.22, g: 0.2, b: 0.45, a: 1}
+    stars: 0.55
+    clouds: 0.5
+    cloudColor: {r: 0.55, g: 0.55, b: 0.8, a: 1}
+    lightColor: {r: 0.6, g: 0.65, b: 1, a: 1}
+    lightIntensity: 0.7
+  - name: Espacio
+    startHeight: 350
+    topColor: {r: 0, g: 0, b: 0.03, a: 1}
+    bottomColor: {r: 0.05, g: 0.02, b: 0.14, a: 1}
+    stars: 1
+    clouds: 0
+    cloudColor: {r: 0.5, g: 0.5, b: 0.7, a: 1}
+    lightColor: {r: 0.8, g: 0.85, b: 1, a: 1}
+    lightIntensity: 0.6
+  - name: Nebulosa
+    startHeight: 700
+    topColor: {r: 0.12, g: 0.03, b: 0.22, a: 1}
+    bottomColor: {r: 0.02, g: 0.12, b: 0.25, a: 1}
+    stars: 1
+    clouds: 0
+    cloudColor: {r: 0.5, g: 0.5, b: 0.7, a: 1}
+    lightColor: {r: 0.85, g: 0.75, b: 1, a: 1}
+    lightIntensity: 0.6
+  weatherFirstHeight: 40
+  weatherRollInterval: 40
+  weatherChance: 0.6
+  weatherDurationMin: 15
+  weatherDurationMax: 20
+  weatherWarnTime: 1
+  weatherFadeTime: 1
+  rainWeight: 1
+  windWeight: 1
+  fogWeight: 1
+  rainGroundDecelMult: 0.25
+  rainGroundAccelMult: 0.7
+  rainWallStickMult: 0.4
+  rainWallSlideSpeedMult: 1.5
+  rainParticleRate: 350
+  rainColor: {r: 0.65, g: 0.8, b: 1, a: 0.55}
+  windStrength: 3.5
+  windParticleRate: 45
+  windColor: {r: 1, g: 1, b: 1, a: 0.4}
+  fogMaxAlpha: 0.85
+  fogColor: {r: 0.78, g: 0.84, b: 0.9, a: 1}
+  windSpeed: 0
+  normalPlatformColor: {r: 0.35, g: 0.6, b: 0.95, a: 1}
+  fallingPlatformColor: {r: 0.95, g: 0.55, b: 0.2, a: 1}
+  timedPlatformColor: {r: 0.7, g: 0.45, b: 0.95, a: 1}
+  movingPlatformColor: {r: 0.2, g: 0.85, b: 0.75, a: 1}
+  safePlatformColor: {r: 0.45, g: 0.85, b: 0.4, a: 1}
